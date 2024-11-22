@@ -1,0 +1,1270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font2:"Inter", sans-serif;
+    --font3: "Amatic SC", sans-serif;
+    --color:#212529;
+    --color2:#7f7f90;
+    --color3:#37373f;
+    --color4:#ce1212;
+    --color5:#7d7d7d;
+    --color6:#ffffff;
+    --color7:#4f4f5a;
+    --color9:#e61414 ;
+    --color10: #212529;
+    --color11:#dddddd;
+    --background-color:#eeeeee;
+    --background-color2:#f5f5f5;
+    --color-btn: hsl( 0, 84%, 44% );
+    --padding:0.3125rem;
+    --margin-bottom: 0.625rem;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 15px;
+}
+.container{
+    
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+#home{
+    background-color: var(--background-color);
+ 
+  
+    
+}
+.navphone{
+    position: absolute;
+    right: 0.9375rem;
+    top: 1.875rem;
+    font-size: 1.5625rem;
+}
+.logo{
+ margin-top: 1.25rem;
+}
+.moon{
+    /* background-color: yellow; */
+    position: absolute;
+    right: 3.75rem;
+    top: 1.875rem;
+
+} 
+.navationbar{
+    background-color: var(--color6);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+.logo h1{
+    color: var(--color);
+    font-family: var(--font-default);
+    font-size: 1.87rem;
+    margin-left: 1.25rem;
+
+}
+.logo h1::after{
+    content: '.';
+    color: var(--color9);
+}
+.navlinks{
+transform: translateX(600%);
+}
+.navlinks ul li{
+    list-style: none;
+    /* display: inline-block; */
+    /* margin-left: 20px; */
+    
+}
+.navlinks ul li a{
+    color: var(--color2);
+    font-size:1.0625rem;
+    font-family: var(--font-default);
+    font-weight: 600;
+    padding: 0.625rem;
+    position: relative;
+}
+
+
+
+.navlinks ul li a::after{
+    content: '';
+    border: 1px solid var(--color4);
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(20%);
+    
+    visibility: hidden;
+}
+
+
+.navlinks ul li a:hover::after{
+   visibility: visible;
+   animation: border 0.5s;
+}
+
+
+
+
+
+.navbar{
+    display: flex;
+    /* padding: 1.25rem; */
+    /* justify-content: space-evenly; */
+  
+    position: relative;  
+     
+}
+.moon i{
+    font-size: 1.5625rem;
+}
+
+.header{
+display: flex;
+/* background-color: yellow; */
+justify-content: space-between;
+align-content:flex-end;
+/* padding: 3.125rem; */
+padding: 1.125rem;
+margin-top: 6.25rem;
+    
+flex-direction: column-reverse;
+flex-wrap: wrap;
+}
+.header-text{
+    /* background-color: blue; */
+    width: 100%;
+margin-top: 1.25rem;
+    text-align: center;
+
+}
+
+.header-text h2{
+    font-family: var(--font3);
+    font-size: 4.0625rem;
+    padding: 0.3125rem;
+    color: var(--color3);
+}
+.header-text p{
+    line-height: 1.6;
+    font-family: var(--font-default);
+    color: var(--color7);
+ 
+}
+
+.btns{
+    margin-top: 2.5rem;
+    font-family: var(--font-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+   
+}
+.btn1 a{
+    background-color: var(--color-btn);
+    padding: 0.625rem 1.5625rem;
+    border-radius: 0px 100vh 100vh;
+    color: var(--color6);
+    /* margin-right: 1.875rem; */
+}
+.btn2{
+    overflow: hidden;
+}
+.btn2 a{
+    padding: 0.625rem 1.5625rem;
+    color: var(--color);
+    font-weight: 600;
+}
+
+
+.vid{
+    background-color:white;
+    padding: 0.725rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.headerimg{
+    /* background-color: red; */
+    width: 100%;
+    filter: drop-shadow(4px 4px 9px #000a);
+
+}
+.headerimg:hover{
+    animation:shake 1s infinite;
+    
+}
+
+.headerimg img{
+    width: 100%;
+}
+.btn1 a:hover{
+    background-color: #e61414;
+}
+.btn2 a:hover{
+    color: var(--color4);
+}
+
+
+/* ----------Our Proffesional Chefs---------- */
+
+.Our-Proffesional-Chefs{
+    margin-top: 4.375rem;
+    padding-bottom: 9.125rem;
+    /* background-color: red; */
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-size: 0.875rem;
+    font-family: var(--font2);
+    color: var(--color2);
+    font-weight: 400;
+
+}
+.title p{
+    color: var(--color10);
+    font-size: 3.125rem;
+    font-family: var(--font3);
+}
+.title span{
+    color: var(--color4);
+}
+.allcard{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.7rem;
+    gap:1.875rem ;
+    margin-top: 2.5rem;
+    
+}
+.card{
+    text-align: center;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.25rem; 
+    position: relative;
+    overflow: hidden;
+    transition: 400ms;
+}
+.card::after{
+    content: " ";
+    position: absolute;
+    background-image: url(download.svg);
+    width: 100%;
+    height: 3.75rem;
+    /* bottom: -1px; */
+    bottom: 135px;
+    right: 0;
+
+}
+.card h3{
+    font-size:1.17rem;
+    color: var(--color);
+    font-family: var(--font2);
+    padding-top: 1.875rem;
+    padding-bottom: var(--padding);
+}
+.card span{
+    font-family: var(--font-default);
+    font-size:0.875rem ;
+    color: var(--color2);
+    padding-bottom: var(--padding);
+}
+.card p{
+    font-family: var(--font-default);
+    font-size:0.9375rem ;
+    font-style: italic;
+    color: var(--color2);
+    padding-top:var(--padding);
+}
+.card img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.social-Icon{
+    position: absolute;
+    top: 1.875rem;
+    right: 1.375rem;
+    background-color: #ffffff;
+    padding: 10px;
+    opacity: 30%;
+    transform: translateX(200%);
+    transition-delay: 400ms;
+}
+.social-Icon i{
+    font-size: 1.125rem;
+    padding: 5px;
+}
+.social-Icon a{
+display: block;
+}
+.card:hover{
+    transform: scale(1.07);
+}
+.card:hover .social-Icon{
+    transform: translateX(0);
+    
+}
+
+/* -------Our-Gallery----------- */
+
+.Our-Gallery{
+    background-color: var(--background-color);
+    margin-bottom: 6.25rem;
+    padding-bottom: 6.25rem;
+    padding-top: 1.25rem;
+
+}
+
+.Gallery{
+    /* display: grid;
+    grid-template-areas:
+    "pizza steak burger"
+    "pizza2 steak fried"
+    "pizza2 omelette kofta"
+   
+    ;
+
+    gap: 20px; */
+    margin-top: 1.25rem;
+
+
+} 
+
+/* .pizza{
+    grid-area:pizza ;
+ 
+
+}
+
+.steak{
+    grid-area:steak ;
+ 
+}
+.burger{
+    grid-area:burger ;
+ 
+}
+.pizza2{
+    grid-area:pizza2 ;
+ 
+}
+.fried{
+    grid-area:fried ;
+
+}
+
+.omelette{
+    grid-area:omelette;
+
+}
+.kofta{
+    grid-area: kofta;
+  
+} */
+.Gallery >*{
+    position: relative;
+    overflow: hidden;
+    color: white;
+   margin-bottom: 2.5rem;
+   font-family: var(--font-default);
+}
+.Gallery img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+   background-color: rgba(0, 0, 0, 0.653);
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   transition: .5s;
+   transform: translateY(100%);
+}
+.layer p{
+    color:var(--color11);
+    font-family: var(--font2);
+}
+.Gallery >*:hover .layer{
+    transform: translateY(0);
+    
+}
+
+ /* ------------CONTACT-------------  */
+
+ .CONTACT{
+    padding-bottom: 6.25rem;
+ }
+iframe{
+    width: 100%;
+    margin-top: 1.875rem;
+    height: 21.875rem;
+}
+
+.icon i{
+    color: var(--color6);
+    background-color: var(--color4);
+    padding: 0.9375rem;
+    border-radius: 50%;
+}
+.detalis{
+    
+    /* background-color: red; */
+    display: flex;
+    gap: 0.9375rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+  
+}
+.detalis-p{
+    font-family: var(--font2);
+    color: var(--color);
+    font-weight: 400;
+}
+.detalis-h3{
+    font-family: var(--font-default);
+    color: var(--color5);
+    font-size: 1.25rem;
+}
+.color-detalis{
+   background-color: var(--background-color);
+}
+.location,.Email,.Call,.Opening{
+padding: 1.875rem;
+display: flex;
+width: 100%;
+
+
+}
+.Our-Address,.Email-Us,.Call-Us,.Opening-Hours{
+    padding: 0.3125rem;
+    margin-left: 0.625rem;
+   
+}
+.span{
+    font-weight: bold;
+}
+
+/* -----inputs-------     */
+input,textarea{
+    font-family: var(--font-default);
+    padding: 0.9375rem 0.9375rem;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.138);
+    
+}
+:is(input,textarea):focus {
+    outline: none;
+    border-color: var(--color4);
+}
+
+/* .input-message{
+    background-color: red;
+} */
+
+textarea{
+    min-height: 9.375rem;
+    max-height: 18.75rem;
+    resize: vertical;
+    margin-bottom: 1.875rem;
+}
+
+
+.name-email{
+    /* display: flex; */
+    /* gap: 0.625rem; */
+    margin-bottom: var(--margin-bottom);
+}
+.name,.email{
+    margin-bottom: var(--margin-bottom);
+}
+.subject{
+    margin-bottom: var(--margin-bottom);
+}
+.sumbit {
+    text-align: center;
+    
+}
+
+.sumbit button{
+    padding: 0.75rem 2.5rem;
+    border-radius: 100px;
+    background-color: var(--color4);
+    color: var(--color6);
+    font-family: var(--font-default);
+}
+.sumbit button:hover{
+    background-color: var(--color9);
+}
+
+
+ /* ---------------------footer------------------  */
+.footer{
+  
+
+    background-image: linear-gradient(#0009, #0009), url(images/textured-metal-background.jpg);
+
+    background-size: contain;
+
+    position: relative;
+}
+
+
+.parent-footer{
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+
+}
+
+.item1{
+    color: var(--color6);
+    /* background-color: blue; */
+    padding-top:3.125rem ;
+}
+.img-foot{
+    /* background-color: green; */
+    width: 20%;
+}
+.text-h2{
+    /* background-color: red; */
+    align-self: center;
+}
+.melify{
+display: flex;
+}
+.item1 .melify h2{
+    font-size: 1.875rem;
+}
+.item1 p,h2{
+    font-family: var(--font-default);
+}
+.item1 img{
+    width: 90%;
+    /* background-color: yellow; */
+}
+.links-so h3{
+text-align: center;
+font-family: var(--font-default);
+border-bottom: 2px solid #ddd6;
+padding: 0.625rem;
+margin-bottom: 0.625rem;
+
+}
+li{
+    list-style: none;
+}
+.social-links i{
+color: white;
+font-size: 1.5rem;
+
+
+
+}
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.625rem;
+}
+
+.item2{
+    /* background-color: green; */
+ 
+color: white;
+padding-top:3.125rem ;
+}
+.text2 h3{
+    font-size: 1.17rem;
+    font-family: var(--font2);
+  
+}
+.text2 p{
+    font-family: var(--font-default);
+    margin-top: 0.625rem;
+}
+
+.Quick-Links h3{
+    margin-top: 1.5625rem;
+    font-family: var(--font2);
+}
+
+.text2 input{
+    padding: 0.625rem;
+   
+    margin-top: 1.25rem;
+}
+.text2 button{
+    border-radius: 0;
+    padding: 0.7rem;
+    background-color: var(--color4);
+    color: white;
+    font-size: 0.9375rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.625rem;
+
+
+}
+.list ul li a{
+    color: white;
+    font-family: var(--font-default);
+    padding: 5px;
+   
+}
+.list li{
+    margin-bottom: 5px;
+}
+
+.list{
+    display: flex;
+    /* background-color: red; */
+   gap: 6.75rem;
+   
+    margin-top: 1.25rem;
+    
+}
+.list ul li{
+    transition: 400ms;
+}
+
+.item3{
+/* background-color:darkred; */
+padding-top:3.125rem ;
+color: white;
+}
+
+.Touch a{
+    color: white;
+    
+
+}
+.Touch i{
+    color: var(--color4);
+    font-size: 1.375rem;
+    height: 2.5rem;
+    cursor: pointer;
+  
+
+}
+.Touch ul li{
+    display: flex;
+    gap: 8px;
+  align-content: center;
+
+
+}
+.Touch span{
+    font-family: var(--font-default);
+    margin-bottom: 0.625rem;
+   
+}
+
+.Touch h3{
+    font-family: var(--font2);
+    font-size: 1.17rem;
+    margin-bottom: 10px;
+}
+.list ul li:hover   {
+    transform: translate(10%);
+    background-color: #222;
+}
+/* 
+-----------------media query---------------- */
+
+@media screen and (min-width:460px){
+     
+    .navlinks{
+        transform: translateX(1400%);
+        }
+        .card::after{
+    
+            bottom: 135px;
+           
+        
+        }
+       
+    
+}
+@media screen and (min-width:540px){
+
+   
+    .navlinks{
+    transform: translateX(1200%);
+    }
+   
+
+}
+
+@media screen and (min-width:768px){
+    html{
+        font-size: 16px;
+    }
+    .container{
+        
+        max-width: 33.75rem;
+        margin: auto;
+        overflow: hidden;
+    }
+ 
+    .navlinks{
+    transform: translateX(600%);
+    }
+   
+
+    
+ 
+    
+    
+    
+
+  
+    /* ----------Our Proffesional Chefs---------- */
+
+
+
+
+    .card{
+        width: calc(calc(100% - 1.875rem) / 2);
+    }
+
+    .card::after{
+
+        bottom: 183px;
+        right: 0;
+    
+    }
+   
+    /* -------Our-Gallery----------- */
+
+.Our-Gallery{
+    background-color: var(--background-color);
+    margin-bottom: 6.25rem;
+    padding-bottom: 6.25rem;
+    padding-top: 1.25rem;
+
+}
+
+.Gallery{
+    display: grid;
+    grid-template-areas:
+    "pizza steak "
+    "burger steak "
+    "pizza2 fried "
+    "pizza2 kofta "  
+    "omelette empty "
+    ;
+    
+
+    gap: 20px;
+  
+
+
+} 
+
+.pizza{
+    grid-area:pizza ;
+ 
+
+}
+
+.steak{
+    grid-area:steak ;
+ 
+}
+.burger{
+    grid-area:burger ;
+ 
+}
+.pizza2{
+    grid-area:pizza2 ;
+ 
+}
+.fried{
+    grid-area:fried ;
+
+}
+
+.omelette{
+    grid-area:omelette;
+
+}
+.kofta{
+    grid-area: kofta;
+  
+}
+.Gallery >*{
+  
+   margin-bottom: 0.5rem;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px){
+
+    .container{
+
+            max-width: 720px;
+    }
+
+    .navlinks{
+        transform: translateX(1000%);
+        }
+       
+
+
+/* ----------Our Proffesional Chefs---------- */
+.card::after{
+     
+    bottom: 166px;
+
+   
+
+}
+
+
+
+.card{
+ 
+    width: calc(calc(100% - 1.875rem) / 2);
+}
+
+
+
+/* -------Our-Gallery----------- */
+
+.Our-Gallery{
+    background-color: var(--background-color);
+    margin-bottom: 6.25rem;
+    padding-bottom: 6.25rem;
+    padding-top: 1.25rem;
+
+}
+
+.Gallery{
+    display: grid;
+    grid-template-areas:
+    "pizza steak "
+    "burger steak "
+    "pizza2 fried "
+    "pizza2 kofta "  
+    "omelette empty "
+    ;
+    
+
+    gap: 20px;
+  
+
+
+} 
+
+.pizza{
+    grid-area:pizza ;
+ 
+
+}
+
+.steak{
+    grid-area:steak ;
+ 
+}
+.burger{
+    grid-area:burger ;
+ 
+}
+.pizza2{
+    grid-area:pizza2 ;
+ 
+}
+.fried{
+    grid-area:fried ;
+
+}
+
+.omelette{
+    grid-area:omelette;
+
+}
+.kofta{
+    grid-area: kofta;
+  
+}
+.Gallery >*{
+  
+   margin-bottom: 0.5rem;
+  
+}
+
+
+ /* ------------CONTACT-------------  */
+
+ 
+
+
+
+.location,.Email,.Call,.Opening{
+
+width: calc(calc(100% - 0.9375rem*2)/2);
+
+
+}
+
+
+
+
+/* ---------------------footer--------------------------- */
+
+
+.item1{
+   
+
+    width: calc(calc(100% - 1.25rem) / 2);
+    order: 1;
+}
+
+
+.item2{
+padding-bottom: 0.625rem;
+order: 2;
+}
+
+
+
+
+.item3{
+width: calc(calc(100% - 1.25rem) / 2);
+order: 1;
+margin-top: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1200px){
+html{
+    font-size: 16px;
+}
+    .container{        
+        max-width: 60rem;
+    }
+    .navlinks{
+        transform: translateX(1300%);
+        }
+       
+
+
+
+        .header{
+          
+            flex-direction: row;
+            padding-top: 9.375rem;
+            
+            padding-bottom: 6.125rem;
+
+            }
+            .header-text{
+              
+                width: 40%;
+                align-content: center;
+            }
+            
+       
+            
+            .btns{
+                margin-top: 2.5rem;
+                font-family: var(--font-default);
+            
+            }
+        
+          .header-text{
+            width: 42%;
+
+          }
+            
+            .headerimg{
+                /* background-color: red; */
+                width: 40%;
+             
+            
+            }
+        
+
+
+/* ----------Our Proffesional Chefs---------- */
+
+            .card{
+ 
+                width: calc(calc(100% - 1.875rem* 3) / 3);
+            }y
+
+
+            /* -------Our-Gallery----------- */
+
+.Our-Gallery{
+   
+    margin-bottom: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.Gallery{
+    display: grid;
+    grid-template-areas:
+    "pizza steak burger"
+    "pizza2 steak fried"
+    "pizza2 omelette kofta"
+   
+    ;
+
+    gap: 20px;
+
+}
+
+.pizza{
+    grid-area:pizza ;
+ 
+
+}
+
+.steak{
+    grid-area:steak ;
+ 
+}
+.burger{
+    grid-area:burger ;
+ 
+}
+.pizza2{
+    grid-area:pizza2 ;
+ 
+}
+.fried{
+    grid-area:fried ;
+
+}
+
+.omelette{
+    grid-area:omelette;
+
+}
+.kofta{
+    grid-area: kofta;
+  
+}
+            
+/* --------------footer----------------- */
+
+
+
+
+
+.text2 input{
+    padding: 0.625rem;
+    width: 80%;
+    margin-top: 1.25rem;
+}
+.text2 button{
+    border-radius: 0;
+    padding: 0.75rem 0;
+    background-color: var(--color4);
+    color: white;
+    /* font-size: 0.9375rem; */
+    border: none;
+    cursor: pointer;
+    width: 10%;
+
+}
+.list ul li a{
+    color: white;
+    font-family: var(--font-default);
+    padding: 5px;
+   
+}
+.list li{
+    margin-bottom: 5px;
+}
+
+.list{
+    display: flex;
+    /* background-color: red; */
+    width: 60%;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    
+}
+.list ul li{
+    transition: 400ms;
+}
+
+
+}
+@media screen and (min-width:1400px){
+
+.container{
+    max-width: 71.25rem;
+
+}
+.navphone{
+    position: absolute;
+    right: 0.9375rem;
+    top: 1.875rem;
+    font-size: 1.5625rem;
+    visibility: hidden;
+}
+
+.navlinks{
+    transform: translateX(0);
+    margin: auto;
+    }
+
+
+.navlinks ul li{
+    display: inline-block;
+}
+
+
+
+.moon{
+    /* background-color: yellow; */
+    position: absolute;
+    right: 3.75rem;
+    top: 2.5rem;
+
+} 
+
+
+.logo{
+    margin-top: 0;
+}
+
+.navbar{
+    padding: 40px 0;
+
+}
+body:has(#home:target) li a[href="#home"], body:has(#cona:target) li a[href="#cona"], body:has(#Gallery:target) li a[href="#Gallery"], body:has(#Chefs:target) li a[href="#Chefs"]{
+    color: #000;
+
+}
+body:has(#home:target) li a[href="#home"]::after{
+    visibility: visible;
+    animation: border 0.5s;
+}
+body:has(#cona:target) li a[href="#cona"]::after{
+    visibility: visible;
+    animation: border 0.5s;
+}
+body:has(#Gallery:target) li a[href="#Gallery"]::after{
+    visibility: visible;
+    animation: border 0.5s;
+}
+body:has(#Chefs:target) li a[href="#Chefs"]::after{
+
+    visibility: visible;
+    animation: border 0.5s;
+}
+
+
+.navlinks ul li a:hover{
+    color: var(--color);
+}
+.navlinks ul li a:hover::after{
+   visibility: visible;
+   animation: border 0.5s;
+}
+/* ---------------------------fotter------------------------------- */
+
+.item1{    
+    width: calc(calc(100% - 1.25rem* 2) / 4);
+
+    order: 1;
+}
+.text-p{
+    font-size: 15px;
+}
+.item2{    
+    width: calc(calc(100% - 1.25rem* 2) / 2);
+
+
+order: 2;
+}
+
+.item3{
+    width: calc(calc(100% - 1.25rem* 2) / 4);
+    order: 3;
+}
+.text2 input{
+    padding: 0.625rem;
+    width: 70%;
+    margin-top: 1.25rem;
+}
+.text2 button{
+    border-radius: 0;
+   
+    background-color: var(--color4);
+    color: white;
+    font-size: 0.9375rem;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 0.625rem;
+
+
+}
+}
